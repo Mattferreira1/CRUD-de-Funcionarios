@@ -1,4 +1,23 @@
 const Funcionario = require("../Model/Funcionario");
+// setInterval(async ()=>{
+//     let teste = 
+//         {
+//             "nome":"teste",
+//             "cargo":"teste",
+//             "salario":1500.00,
+//             "departamento":"teste",
+//             "cpf":"000.000.000-00",
+//             "telefone":123456,
+//             "endereco":"rua teste"
+//         }
+    
+//     const novoFuncionario = new Funcionario(teste);
+//     novoFuncionario.save()
+//     console.log("Funcionário adicionado ao sistema.");
+
+//     await Funcionario.findOneAndDelete({ nome: teste.nome, cargo: teste.cargo });
+//     console.log("Funcionário deletado ao sistema.");
+// }, 5000)
 
 class FuncionariosController{
     async create(req,res){
